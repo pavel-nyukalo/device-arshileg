@@ -118,18 +118,16 @@
   <main class="page-main">
     <h1 class="visually-hidden">Device - Mагазин деваисов</h1>
     <section class="slider">
+      <div class="slider-controller">
+        <button class="slider-prev-button" type="button">
+          <span class="visually-hidden">Previous Slide</span>
+        </button>
+        <button class="slider-next-button" type="button">
+          <span class="visually-hidden">Next Slide</span>
+        </button>
+      </div>
       <ul class="slider-list">
         <li class="slider-item">
-          <div class="slider-column">
-            <div class="slider-controller">
-              <button class="slider-prev-button" type="button">
-                <span class="visually-hidden">Previous Slide</span>
-              </button>
-              <button class="slider-next-button" type="button">
-                <span class="visually-hidden">Next Slide</span>
-              </button>
-            </div>
-          </div>
           <div class="slider-column">
             <span class="slider-number">01</span>
             <h3 class="slider-title">Порхает как бабочка,
@@ -139,17 +137,6 @@
               стандартную камеру.
             </p>
             <button class="button" type="button">Подробнее</button>
-            <div class="slider-toggles">
-              <button class="toggle current-toggle" type="button">
-                <span class="visually-hidden">First Active Slide</span>
-              </button>
-              <button class="toggle" type="button">
-                <span class="visually-hidden">Second Slide</span>
-              </button>
-              <button class="toggle" type="button">
-                <span class="visually-hidden">Third Slide</span>
-              </button>
-            </div>
           </div>
           <dl class="slider-specs-list">
             <div class="slider-specs-item">
@@ -164,16 +151,6 @@
         </li>
         <li class="slider-item">
           <div class="slider-column">
-            <div class="slider-controller">
-              <button class="slider-prev-button" type="button">
-                <span class="visually-hidden">Previous Slide</span>
-              </button>
-              <button class="slider-next-button" type="button">
-                <span class="visually-hidden">Next Slide</span>
-              </button>
-            </div>
-          </div>
-          <div class="slider-column">
             <span class="slider-number">02</span>
             <h3 class="slider-title">Худеем
               правильно!</h3>
@@ -182,17 +159,6 @@
               диету.
             </p>
             <button class="button">Подробнее</button>
-            <div class="slider-toggles">
-              <button class="toggle current-toggle" type="button">
-                <span class="visually-hidden">First Active Slide</span>
-              </button>
-              <button class="toggle" type="button">
-                <span class="visually-hidden">Second Slide</span>
-              </button>
-              <button class="toggle" type="button">
-                <span class="visually-hidden">Third Slide</span>
-              </button>
-            </div>
           </div>
           <dl class="slider-specs-list">
             <div class="slider-specs-item">
@@ -203,16 +169,6 @@
         </li>
         <li class="slider-item">
           <div class="slider-column">
-            <div class="slider-controller">
-              <button class="slider-prev-button" type="button">
-                <span class="visually-hidden">Previous Slide</span>
-              </button>
-              <button class="slider-next-button" type="button">
-                <span class="visually-hidden">Next Slide</span>
-              </button>
-            </div>
-          </div>
-          <div class="slider-column">
             <span class="slider-number">03</span>
             <h3 class="slider-title">Делай селфи,
               как Бен Стиллер! </h3>
@@ -221,17 +177,6 @@
               длиной и весом всего 5 кг.
             </p>
             <button class="button" type="button">Подробнее</button>
-            <div class="slider-toggles">
-              <button class="toggle current-toggle" type="button">
-                <span class="visually-hidden">First Active Slide</span>
-              </button>
-              <button class="toggle" type="button">
-                <span class="visually-hidden">Second Slide</span>
-              </button>
-              <button class="toggle" type="button">
-                <span class="visually-hidden">Third Slide</span>
-              </button>
-            </div>
           </div>
           <dl class="slider-specs-list">
             <div class="slider-specs-item">
@@ -249,6 +194,17 @@
           </dl>
         </li>
       </ul>
+      <div class="slider-toggles">
+        <button class="toggle current-toggle" type="button">
+          <span class="visually-hidden">First Active Slide</span>
+        </button>
+        <button class="toggle" type="button">
+          <span class="visually-hidden">Second Slide</span>
+        </button>
+        <button class="toggle" type="button">
+          <span class="visually-hidden">Third Slide</span>
+        </button>
+      </div>
     </section>
 
     <section class="product-categories">
@@ -338,16 +294,18 @@
     </section>
 
     <section class="custom-order">
-      <h2 class="visually-hidden">
-        Custom Order
-      </h2>
-      <div class="custom-order-icon">
-        <span class="visually-hidden">
-          Shipping Icon
-        </span>
-      </div>
-      <span class="custom-order-heaadline">Доставим редкий товар под заказ</span>
-      <span class="visually-hidden"> Info Button</span>
+      <a class="custom-order-link">
+        <h2 class="visually-hidden">
+          Custom Order
+        </h2>
+        <div class="custom-order-icon">
+          <span class="visually-hidden">
+            Shipping Icon
+          </span>
+        </div>
+        <span class="custom-order-heaadline">Доставим редкий товар под заказ</span>
+        <span class="visually-hidden"> Info Button</span>
+      </a>
     </section>
 
     <section class="about-us">
@@ -429,7 +387,7 @@
         </a>
       </li>
     </ul>
-    <p>Тел.: +7 (812) 812-12-12</p>
+    <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</p>
 
     <ul class="footer-socials">
       <li class="footer-socials-item">
@@ -456,7 +414,7 @@
     </ul>
 
     <a class="copyright-link" href="#">
-      <img class="copyright-img" src="#" width="115" height="33" alt="HTML Academy Logo">
+      <span class="visually-hidden"> SVG of HTMLAcademy Logo</span>
     </a>
 
   </footer>

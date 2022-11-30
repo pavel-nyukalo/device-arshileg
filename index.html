@@ -6,115 +6,122 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Device</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <header class="page-header">
-    <a class="logo-link" href="#">
-      <img class="logo-img" src="#" width="145" height="36" alt="Device Logo">
-    </a>
-    <form class="search-form" method="post">
-      <label class="visually-hidden" for="search-box">Search Box</label>
-      <input class="search-box" type="text" placeholder="Поиск по сайту" id="search-box">
-      <button class="search-button" type="submit">
-        <span class="visually-hidden">Search Form</span>
-      </button>
-    </form>
-    <ul class="navigation-list user-navigation">
-      <li class="top-navigation-item">
-        <a class="navigation-link" href="#">Войти</a>
-      </li>
-    </ul>
-    <ul class="navigation-list product-navigation">
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">
-          Сравнить
+  <div class="page-container">
+    <header class="page-header">
+      <div class="logo">
+        <a class="logo-link" href="#">
+          <img class="logo-img" src="../device/img/device.svg" width="145" height="36" alt="Device Logo">
         </a>
-        <a class="navigation-link" href="#">
-          Корзина
-        </a>
-      </li>
-    </ul>
-    <div class="modal-popup">
-      <ul class="cart-list">
-        <li class="cart-item">
-          <img class="cart-item" src="#" alt="Любительская селфи-палка">
-          <h4 class="cart-item-title">Любительская селфи-палка</h4>
-          <span class="cart-item-remove"></span>
-        </li>
-        <li class="cart-item">
-          <img class="cart-item" src="#" alt="Профессиональная селфи-палка">
-          <h4 class="cart-item-title">Любительская селфи-палка</h4>
-          <span class="cart-item-remove"></span>
-        </li>
-      </ul>
-      <div class="cart-list-summary">
-        <span class="cart-item-number">Товаров: 2</span>
-        <span class="cart-item-sum">Сумма: 2000 </span>
       </div>
-      <button class="button-cart" type="button">Открыть корзину</button>
-    </div>
-    <nav class="main-nav">
-      <ul class="main-nav-list">
-        <li class="main-nav-item">
-          <a class="main-nav-link" href="#">
-            Каталог товаров
-          </a>
-          <ul class="sub-nav column-1">
-            <li class="sub-nav-item">
-              <a class="sub-nav-link" href="#">
-                Экшн-камеры
-              </a>
+      <div class="top-navigation">
+        <form class="search-form" method="post">
+          <label class="visually-hidden" for="search-box">Search Box</label>
+          <input class="search-box" type="text" placeholder="Поиск по сайту" id="search-box">
+          <button class="search-button" type="submit">
+            Найти
+          </button>
+        </form>
+        <ul class="navigation-list user-navigation">
+          <li class="top-navigation-item">
+            <a class="navigation-link" href="#">Войти</a>
+          </li>
+        </ul>
+        <ul class="navigation-list product-navigation">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              Сравнить
+            </a>
+            <a class="navigation-link" href="#">
+              Корзина
+            </a>
+          </li>
+        </ul>
+        <div class="modal-popup visually-hidden">
+          <ul class="cart-list">
+            <li class="cart-item">
+              <img class="cart-item" src="#" alt="Любительская селфи-палка">
+              <h4 class="cart-item-title">Любительская селфи-палка</h4>
+              <button class="cart-item-remove"></span>
             </li>
-            <li class="sub-nav-item">
-              <a class="sub-nav-link" href="#">
-                Моноподы для cелфи
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a class="sub-nav-link" href="#">
-                Виртуальная реальность
-              </a>
-            </li>
-          </ul>
-          <ul class="sub-nav column-2">
-            <li class="sub-nav-item">
-              <a class="sub-nav-link" href="#">
-                Фитнес-браслеты
-              </a>
-            </li>
-            <li class="sub-nav-item">
-              <a class="sub-nav-link" href="#">
-                Умные часы
-              </a>
-            </li>
-          </ul>
-          <ul class="sub-nav column-3">
-            <li class="sub-nav-item">
-              <a class="sub-nav-link" href="#">
-                Квадрокоптеры
-              </a>
+            <li class="cart-item">
+              <img class="cart-item" src="#" alt="Профессиональная селфи-палка">
+              <h4 class="cart-item-title">Любительская селфи-палка</h4>
+              <button class="cart-item-remove"></span>
             </li>
           </ul>
-        </li>
-        <li class="main-nav-item">
-          <a class="main-nav-link" href="#">
-            Доставка
-          </a>
-        </li>
-        <li class="main-nav-item">
-          <a class="main-nav-link" href="#">
-            Гарантия
-          </a>
-        </li>
-        <li class="main-nav-item">
-          <a class="main-nav-link" href="#">
-            Контакты
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+          <div class="cart-list-summary">
+            <span class="cart-item-number">Товаров: 2</span>
+            <span class="cart-item-sum">Сумма: 2000 </span>
+          </div>
+          <button class="button-cart" type="button">Открыть корзину</button>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="#">
+              Каталог товаров
+            </a>
+            <ul class="sub-nav column-1">
+              <li class="sub-nav-item">
+                <a class="sub-nav-link" href="#">
+                  Экшн-камеры
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a class="sub-nav-link" href="#">
+                  Моноподы для cелфи
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a class="sub-nav-link" href="#">
+                  Виртуальная реальность
+                </a>
+              </li>
+            </ul>
+            <ul class="sub-nav column-2">
+              <li class="sub-nav-item">
+                <a class="sub-nav-link" href="#">
+                  Фитнес-браслеты
+                </a>
+              </li>
+              <li class="sub-nav-item">
+                <a class="sub-nav-link" href="#">
+                  Умные часы
+                </a>
+              </li>
+            </ul>
+            <ul class="sub-nav column-3">
+              <li class="sub-nav-item">
+                <a class="sub-nav-link" href="#">
+                  Квадрокоптеры
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="#">
+              Доставка
+            </a>
+          </li>
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="#">
+              Гарантия
+            </a>
+          </li>
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="#">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
   <main class="page-main">
     <h1 class="visually-hidden">Device - Mагазин деваисов</h1>
     <section class="slider">
@@ -294,10 +301,10 @@
     </section>
 
     <section class="custom-order">
+      <h2 class="visually-hidden">
+        Custom Order
+      </h2>
       <a class="custom-order-link">
-        <h2 class="visually-hidden">
-          Custom Order
-        </h2>
         <div class="custom-order-icon">
           <span class="visually-hidden">
             Shipping Icon
@@ -335,12 +342,12 @@
         Вы можете забрать товар сами, заехав в наш офис.
         Заодно сможете проверить работоспособность покупки.
       </p>
-      <b>Интернет-магазин «Девайс»</b>
+      <b class="contacts-name">Интернет-магазин «Девайс»</b>
       <address class="contacts-address">
         <p class="contacts-street">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         <a class="contacts-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
-      <b> Время работы</b>
+      <b class="contacts-time"> Время работы</b>
       <span>пн—пт: с 10:00 до 22:00</span>
       <span>сб—вс: с 10:00 до 19:00</span>
       <button class="button" type="button">Напишите нам</button>
@@ -367,7 +374,7 @@
     <a class="footer-logo-link">
       <img class="footer-logo-img" src="#" alt="Logo Device for dark background" width="145" height="36">
     </a>
-    <p>Санкт-Петербург, набережная
+    <p class="footer-address">Санкт-Петербург, набережная
       реки Карповки, 5, литера П.</p>
 
     <ul class="footer-nav">
@@ -387,7 +394,7 @@
         </a>
       </li>
     </ul>
-    <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</p>
+    <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</p>
 
     <ul class="footer-socials">
       <li class="footer-socials-item">

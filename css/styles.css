@@ -57,7 +57,6 @@ body {
 }
 .navigation-list {
   list-style: none;
-  text-decoration: none;
 }
 .main-nav-list a {
   text-decoration: none;
@@ -364,7 +363,7 @@ body {
   text-align: right;
 }
 /* Button */
-button {
+.button-primary {
   font-size: inherit;
   font-weight: 800;
   line-height: 21px;

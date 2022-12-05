@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "Rubik";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/Rubik-Regular.woff2");
-    font-display: swap;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Rubik-Regular.woff2");
+  font-display: swap;
 }
 @font-face {
-  font-family: "Rubik Bold";
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/Rubik-Bold.woff2");
@@ -16,7 +16,7 @@
   font-family: "Raleway Extrabold";
   font-style: normal;
   font-weight: 800;
-  src: url(../fonts/Raleway-ExtraBold.woff2);
+  src: url("../fonts/Raleway-ExtraBold.woff2");
   font-display: swap;
 }
 .visually-hidden {
@@ -71,6 +71,7 @@ body {
 
 }
 .main-nav-list {
+  display: flex;
   list-style: none;
 }
 .main-nav-link {
@@ -191,7 +192,6 @@ body {
   line-height: 30px;
 }
 .about-us-item {
-  font-family: "Rubik Bold", sans-serif;
   font-weight: 700;
   line-height: 20px;
   color: #000000;
@@ -210,13 +210,11 @@ body {
   line-height: 30px;
 }
 .contacts-name {
-  font-family: "Rubik Bold", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
 .contacts-time {
-  font-family: "Rubik Bold", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -228,7 +226,7 @@ body {
 
 /* Subscribe  */
 .subscribe {
-  background-color: #F0F0    F0;
+  background-color: #F0F0F0;
 }
 .subscribe-title {
   font-family: "Raleway Extrabold", sans-serif;
@@ -271,7 +269,6 @@ body {
   background-color: #EBEBEB;
 }
 .catalog-filter-title {
-  font-family: "Rubik Bold", sans-serif;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -2%;
@@ -294,7 +291,6 @@ body {
 
 /* Products */
 .catalog-item-title {
-  font-family: "Rubik Bold", sans-serif;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: -2%;

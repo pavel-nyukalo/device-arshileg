@@ -6,35 +6,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Device</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="logo-link" href="#">
-      <img class="logo-img" src="#" width="145" height="36" alt="Device Logo">
-    </a>
-    <form class="search-form" method="post">
-      <label class="visually-hidden" for="search-box">Search Box</label>
-      <input class="search-box" type="text" placeholder="Поиск по сайту" id="search-box">
-      <button class="search-button" type="submit">
-        Найти
-      </button>
-    </form>
-    <ul class="navigation-list user-navigation">
-      <li class="top-navigation-item">
-        <a class="navigation-link" href="#">Войти</a>
-      </li>
-    </ul>
-    <ul class="navigation-list product-navigation">
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">
-          Сравнить
-        </a>
-        <a class="navigation-link" href="#">
-          Корзина
-        </a>
-      </li>
-    </ul>
+    <div class="logo">
+      <a class="logo-link" href="#">
+        <img class="logo-img" src="../device/img/device.svg" width="145" height="36" alt="Device Logo">
+      </a>
+    </div>
+    <div class="top-navigation">
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="search-box">Search Box</label>
+        <input class="search-box" type="text" placeholder="Поиск по сайту" id="search-box">
+        <button class="search-button" type="submit">
+          Найти
+        </button>
+      </form>
+      <ul class="navigation-list user-navigation">
+        <li class="top-navigation-item">
+          <a class="navigation-link" href="#">Войти</a>
+        </li>
+      </ul>
+      <ul class="navigation-list product-navigation">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            Сравнить
+          </a>
+          <a class="navigation-link" href="#">
+            Корзина
+          </a>
+        </li>
+      </ul>
+      <div class="modal-popup visually-hidden">
+        <ul class="cart-list">
+          <li class="cart-item">
+            <img class="cart-item" src="#" alt="Любительская селфи-палка">
+            <h4 class="cart-item-title">Любительская селфи-палка</h4>
+            <button class="cart-item-remove"></button>
+          </li>
+          <li class="cart-item">
+            <img class="cart-item" src="#" alt="Профессиональная селфи-палка">
+            <h4 class="cart-item-title">Любительская селфи-палка</h4>
+            <button class="cart-item-remove"></button>
+          </li>
+        </ul>
+        <div class="cart-list-summary">
+          <span class="cart-item-number">Товаров: 2</span>
+          <span class="cart-item-sum">Сумма: 2000 </span>
+        </div>
+        <button class="button-cart" type="button">Открыть корзину</button>
+      </div>
+    </div>
     <nav class="main-nav">
       <ul class="main-nav-list">
         <li class="main-nav-item">
@@ -121,7 +145,7 @@
       <div class="side-filter-header">
         <h2 class="side-filter-header-title">Фильтр:</h2>
       </div>
-      <form class="catalog-filter" action="https://htmlacademy.ru" method="get">
+      <form class="catalog-filter" method="post">
         <fieldset class="catalog-field-group">
           <legend class="catalog-filter-title">
             Стоимость
@@ -210,11 +234,25 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button" type="button">Показать</button>
+        <button class="button-primary" type="button">Показать</button>
       </form>
     </div>
     <div class="catalog-area">
       <h2 class="visually-hidden">Catalog Products</h2>
+      <div class="catalog-sorter">
+        <span class="catalog-sorter-title">сортировка:</span>
+        <select class="select-control" aria-label="sorting">
+          <option value="popular">Most Popular</option>
+          <option value="cheap">The cheapest</option>
+          <option value="expensive">The most expensive</option>
+        </select>
+        <button type="button">
+          <span class="visually-hidden">Sort ascending</span>
+        </button>
+        <button type="button">
+          <span class="visually-hidden">Sort desceding</span>
+        </button>
+      </div>
       <ul class="catalog-list">
         <li class="catalog-item">
           <img class="catalog-item-img" src="#" width="360" height="380" alt="Любительская селфи-палка">
@@ -238,7 +276,7 @@
           <span class="catalog-item-price">4 900 ₽</span>
         </li>
       </ul>
-      <button class="catalog-load-more" type="button">"Загрузить ещё"</button>
+      <button class="button-load-more" type="button">Загрузить ещё</button>
       <div class="pagination">
         <a class="pagination-left" href="#">Назад</a>
         <ul class="pagination-list">

@@ -6,53 +6,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Device</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="logo-link" href="#">
-      <img class="logo-img" src="#" width="145" height="36" alt="Device Logo">
-    </a>
-    <form class="search-form" method="post">
-      <label class="visually-hidden" for="search-box">Search Box</label>
-      <input class="search-box" type="text" placeholder="Поиск по сайту" id="search-box">
-      <button class="search-button" type="submit">
-        <span class="visually-hidden">Search Form</span>
-      </button>
-    </form>
-    <ul class="navigation-list user-navigation">
-      <li class="top-navigation-item">
-        <a class="navigation-link" href="#">Войти</a>
-      </li>
-    </ul>
-    <ul class="navigation-list product-navigation">
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">
-          Сравнить
-        </a>
-        <a class="navigation-link" href="#">
-          Корзина
-        </a>
-      </li>
-    </ul>
-    <div class="modal-popup">
-      <ul class="cart-list">
-        <li class="cart-item">
-          <img class="cart-item" src="#" alt="Любительская селфи-палка">
-          <h4 class="cart-item-title">Любительская селфи-палка</h4>
-          <span class="cart-item-remove"></span>
-        </li>
-        <li class="cart-item">
-          <img class="cart-item" src="#" alt="Профессиональная селфи-палка">
-          <h4 class="cart-item-title">Любительская селфи-палка</h4>
-          <span class="cart-item-remove"></span>
+    <div class="logo">
+      <a class="logo-link" href="#">
+        <img class="logo-img" src="../device/img/device.svg" width="145" height="36" alt="Device Logo">
+      </a>
+    </div>
+    <div class="top-navigation">
+      <form class="search-form" method="post">
+        <label class="visually-hidden" for="search-box">Search Box</label>
+        <input class="search-box" type="text" placeholder="Поиск по сайту" id="search-box">
+        <button class="search-button" type="submit">
+          Найти
+        </button>
+      </form>
+      <ul class="navigation-list user-navigation">
+        <li class="top-navigation-item">
+          <a class="navigation-link" href="#">Войти</a>
         </li>
       </ul>
-      <div class="cart-list-summary">
-        <span class="cart-item-number">Товаров: 2</span>
-        <span class="cart-item-sum">Сумма: 2000 </span>
+      <ul class="navigation-list product-navigation">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            Сравнить
+          </a>
+          <a class="navigation-link" href="#">
+            Корзина
+          </a>
+        </li>
+      </ul>
+      <div class="modal-popup visually-hidden">
+        <ul class="cart-list">
+          <li class="cart-item">
+            <img class="cart-item" src="#" alt="Любительская селфи-палка">
+            <h4 class="cart-item-title">Любительская селфи-палка</h4>
+            <button class="cart-item-remove" type="button"></button>
+          </li>
+          <li class="cart-item">
+            <img class="cart-item" src="#" alt="Профессиональная селфи-палка">
+            <h4 class="cart-item-title">Любительская селфи-палка</h4>
+            <button class="cart-item-remove" type="button"></button>
+          </li>
+        </ul>
+        <div class="cart-list-summary">
+          <span class="cart-item-number">Товаров: 2</span>
+          <span class="cart-item-sum">Сумма: 2000 </span>
+        </div>
+        <button class="button-cart" type="button">Открыть корзину</button>
       </div>
-      <button class="button-cart" type="button">Открыть корзину</button>
     </div>
     <nav class="main-nav">
       <ul class="main-nav-list">
@@ -136,18 +141,19 @@
               Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированным под
               стандартную камеру.
             </p>
-            <button class="button" type="button">Подробнее</button>
+            <button class="button-primary" type="button">Подробнее</button>
+            <dl class="slider-specs-list">
+              <div class="slider-specs-item">
+                <dt class="slider-specs-term">Дальность полета</dt>
+                <dd class="slider-specs-definition">800 м</dd>
+              </div>
+              <div class="slider-product-item">
+                <dt class="slider-specs-term">Радиус поражения</dt>
+                <dd class="slider-specs-definition">50 м</dd>
+              </div>
+            </dl>
           </div>
-          <dl class="slider-specs-list">
-            <div class="slider-specs-item">
-              <dt class="slider-specs-term">Дальность полета</dt>
-              <dd class="slider-specs-definition">800 м</dd>
-            </div>
-            <div class="slider-product-item">
-              <dt class="slider-specs-term">Радиус поражения</dt>
-              <dd class="slider-specs-definition">50 м</dd>
-            </div>
-          </dl>
+
         </li>
         <li class="slider-item">
           <div class="slider-column">
@@ -158,7 +164,7 @@
               Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать
               диету.
             </p>
-            <button class="button">Подробнее</button>
+            <button class="button-primary">Подробнее</button>
           </div>
           <dl class="slider-specs-list">
             <div class="slider-specs-item">
@@ -176,7 +182,7 @@
               Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров
               длиной и весом всего 5 кг.
             </p>
-            <button class="button" type="button">Подробнее</button>
+            <button class="button-primary" type="button">Подробнее</button>
           </div>
           <dl class="slider-specs-list">
             <div class="slider-specs-item">
@@ -256,13 +262,13 @@
     <section class="services">
       <ul class="services-list">
         <li class="services-item">
-          <button class="button services-button button-active" type="button">Доставка</button>
+          <button class="button-primary services-button button-active" type="button">Доставка</button>
         </li>
         <li class="services-item">
-          <button class="button services-button" type="button">Гарантия</button>
+          <button class="button-primary services-button" type="button">Гарантия</button>
         </li>
         <li class="services-item">
-          <button class="button services-button" type="button">Кредит</button>
+          <button class="button-primary services-button" type="button">Кредит</button>
         </li>
       </ul>
       <div class="services-items-wrapper">
@@ -294,10 +300,10 @@
     </section>
 
     <section class="custom-order">
+      <h2 class="visually-hidden">
+        Custom Order
+      </h2>
       <a class="custom-order-link">
-        <h2 class="visually-hidden">
-          Custom Order
-        </h2>
         <div class="custom-order-icon">
           <span class="visually-hidden">
             Shipping Icon
@@ -323,7 +329,7 @@
         <li class="about-us-item">СДИК</li>
         <li class="about-us-item">ТоксБерри</li>
       </ul>
-      <button class="button" type="button">Подробнее о нас</button>
+      <button class="button-primary" type="button">Подробнее о нас</button>
 
     </section>
 
@@ -335,15 +341,15 @@
         Вы можете забрать товар сами, заехав в наш офис.
         Заодно сможете проверить работоспособность покупки.
       </p>
-      <b>Интернет-магазин «Девайс»</b>
+      <b class="contacts-name">Интернет-магазин «Девайс»</b>
       <address class="contacts-address">
         <p class="contacts-street">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         <a class="contacts-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
-      <b> Время работы</b>
+      <b class="contacts-time"> Время работы</b>
       <span>пн—пт: с 10:00 до 22:00</span>
       <span>сб—вс: с 10:00 до 19:00</span>
-      <button class="button" type="button">Напишите нам</button>
+      <button class="button-primary" type="button">Напишите нам</button>
     </section>
 
     <section class="subscribe">
@@ -357,7 +363,7 @@
       <form class="subscribe-form" method="post">
         <label class="visually-hidden" for="subscribe-mail">Email for Subscription</label>
         <input class="field" type="text" placeholder="Ваш e-mail" id="subscribe-mail">
-        <button type="button" type="submit">Подписаться</button>
+        <button type="submit">Подписаться</button>
       </form>
       <span class="subsribe-info">Это бесплатно</span>
     </section>
@@ -367,8 +373,10 @@
     <a class="footer-logo-link">
       <img class="footer-logo-img" src="#" alt="Logo Device for dark background" width="145" height="36">
     </a>
-    <p>Санкт-Петербург, набережная
-      реки Карповки, 5, литера П.</p>
+    <p class="footer-address">
+      Санкт-Петербург, набережная
+      реки Карповки, 5, литера П.
+    </p>
 
     <ul class="footer-nav">
       <li class="footer-nav-item">
@@ -387,7 +395,7 @@
         </a>
       </li>
     </ul>
-    <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</p>
+    <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
 
     <ul class="footer-socials">
       <li class="footer-socials-item">

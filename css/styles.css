@@ -119,6 +119,9 @@ body {
 }
 
 /* Slider */
+.slider {
+  margin-bottom: 70px;
+}
 .slider-column {
   width: 560px;
 }
@@ -504,7 +507,7 @@ body {
 }
 
 /* Button */
-.button-primary {
+.button {
   font-size: inherit;
   font-weight: 800;
   line-height: 21px;

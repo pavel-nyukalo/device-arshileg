@@ -19,9 +19,6 @@
   src: url("../fonts/Raleway-ExtraBold.woff2");
   font-display: swap;
 }
-.hidden {
-  display: none!important;
-}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -356,6 +353,18 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #E5E5E5;
+  position: relative;
+  width: 258px;
+}
+.side-filter:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+  background-color: #E5E5E5;
 }
 .side-filter-wrapper {
   width: 236px;
@@ -363,6 +372,21 @@ body {
 }
 .side-filter-header {
   min-height: 70px;
+  background-color: #DCDCDC;
+}
+.side-filter-header {
+  position: relative;
+  min-height: 70px;
+  background-color: #DCDCDC;
+}
+.side-filter-header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
   background-color: #DCDCDC;
 }
 
@@ -396,10 +420,22 @@ body {
   line-height: 19px;
   color: #000000;
 }
-
-
+.catalog {
+  padding: 69px 0 0 72px;
+}
 .catalog-sorter {
   min-height: 70px;
+  position: relative;
+  background-color: #EBEBEB;
+}
+.catalog-sorter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
   background-color: #EBEBEB;
 }
 .catalog-sorter-title {
@@ -413,6 +449,12 @@ body {
 .catalog-list {
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 40px;
 }
 .catalog-item-title {
   font-weight: 700;
@@ -438,7 +480,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 720px;
-  margin: 51px auto;
+  margin: 51px 0;
   background-color: #EBEBEB;
 }
 .pagination-left,
@@ -464,7 +506,7 @@ body {
 /* Footer  */
 .page-footer {
   background-color: #444444;
-  height: 321px;
+  min-height: 321px;
 }
 .footer-address {
   font-size: 16px;
@@ -530,4 +572,9 @@ body {
   height: 55px;
   background-color: transparent;
   border: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.hidden {
+  display: none;
 }
